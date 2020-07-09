@@ -173,7 +173,7 @@ handleSubmit1(event) {
       <option value="smith">smith</option>
       <option value="carpenter">carpenter</option>
       <option value="photographer">photographer</option>
-      <option value="nurse">nurse</option>
+      <option value="teaching">teaching</option>
     </Form.Control>
   </Form.Group>
   <Button type="submit"  className="mb-2">
@@ -187,7 +187,10 @@ handleSubmit1(event) {
 
   {
     //service: "smith"
-if(user.service==this.state.value){
+    //category:teaching
+
+
+if(user.category==this.state.value){
   return (
 
     
@@ -201,7 +204,7 @@ if(user.service==this.state.value){
       <Card.Text>
       <div>{user.name}</div>
 <div>{user.email}</div>
-<div>{user.service}</div>
+<div>{user.category}</div>
 <br></br><br></br><br></br>
       </Card.Text>
     </Card.Body>
